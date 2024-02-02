@@ -617,6 +617,36 @@ h2 {
     color: #FFF200;
 }
 
+.hamburger {
+    position: absolute;
+    right: 30px;
+    height: 21px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #DB9554;
+    transition: all 0.3s ease;
+}
+
+.hamburger span.long {
+    width: 36px;
+}
+
+.hamburger:hover .long {
+    width: 30px;
+}
+
 .intro {
     background: url("../images/main-bg.jpg") center center/cover;
     color: #FFF;
@@ -1221,6 +1251,10 @@ h2.individual__title {
 }
 
 @media (max-width: 1200px) {
+    h2 {
+        font-size: 5rem;
+    }
+
     .header {
         font-size: 1.7rem;
     }
@@ -1229,16 +1263,61 @@ h2.individual__title {
         margin-right: 25px;
     }
 
-    .header__nav {
-        margin-right: 40px;
-    }
-
     .header__social {
         margin-right: 30px;
     }
 
     .header__phones img {
         width: 32px;
+    }
+
+    .intro__main {
+        height: 100vh;
+    }
+
+    .intro__title {
+        font-size: 6rem;
+    }
+
+    .intro__middle a {
+        font-size: 2.7rem;
+    }
+
+    .intro__btn span, .how__btn span, .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span, .individual__btn span, .mortgage__top-btn span, .mortgage__bottom-btn span, .contact__form button span {
+        font-size: 2.7rem;
+    }
+
+    .intro__btn {
+        max-width: 470px;
+    }
+
+    .intro__btn img {
+        max-width: 470px;
+    }
+
+    .how__middle-video {
+        max-width: 550px;
+    }
+
+    .how__middle-numbers-title {
+        font-size: 5rem;
+    }
+
+    .how__btn {
+        font-size: 2.7rem;
+    }
+
+    .poroterm__cards {
+        overflow: auto;
+    }
+
+    .poroterm__cards, .istkult__cards, .popular__cards {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .poroterm__cards div, .istkult__cards div, .popular__cards div {
+        margin-right: 20px;
     }
 }
 
@@ -1261,5 +1340,328 @@ h2.individual__title {
 
     .header__social img {
         width: 24px;
+    }
+
+    .intro__main {
+        height: 650px;
+    }
+
+    .intro__title {
+        font-size: 5.1rem;
+        margin-bottom: 30px;
+    }
+
+    .intro__middle {
+        margin-bottom: 30px;
+    }
+
+    .intro__middle a {
+        font-size: 1.8rem;
+    }
+
+    .intro__btn span, .how__btn span, .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span, .individual__btn span, .mortgage__top-btn span, .mortgage__bottom-btn span, .contact__form button span {
+        font-size: 1.8rem;
+    }
+
+    .intro__btn {
+        max-width: 340px;
+    }
+
+    .intro__btn img {
+        max-width: 340px;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .how__middle-video {
+        max-width: 400px;
+        margin-right: 50px;
+    }
+
+    .how__middle-video img {
+        width: 90px;
+    }
+
+    .how__middle {
+        height: 350px;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .how__middle-numbers-title {
+        font-size: 4rem;
+    }
+
+    .how__middle-numbers-text {
+        font-size: 2.5rem;
+    }
+
+    .how__btn img {
+        max-width: 240px;
+    }
+
+    .poroterm__card, .istkult__card, .popular__card {
+        max-width: 300px;
+        padding: 15px 10px;
+    }
+
+    .poroterm__card img, .istkult__card img, .popular__card img {
+        width: 280px;
+    }
+
+    .poroterm__card-btn img, .istkult__card-btn img, .popular__card-btn img {
+        width: 240px;
+    }
+
+    .poroterm__card .poroterm__card-info, .istkult__card .poroterm__card-info, .popular__card .poroterm__card-info {
+        margin-right: 0;
+    }
+
+    .poroterm__card .poroterm__card-place, .istkult__card .poroterm__card-place, .popular__card .poroterm__card-place {
+        margin-right: 0;
+    }
+
+    .poroterm__card .poroterm__card-square, .istkult__card .poroterm__card-square, .popular__card .poroterm__card-square {
+        margin-right: 0;
+    }
+
+    .poroterm__card .poroterm__cards div, .poroterm__card .istkult__cards div, .poroterm__card .popular__cards div, .istkult__card .poroterm__cards div, .istkult__card .istkult__cards div, .istkult__card .popular__cards div, .popular__card .poroterm__cards div, .popular__card .istkult__cards div, .popular__card .popular__cards div {
+        margin-right: 0;
+    }
+
+    .istkult__cards {
+        overflow: auto;
+    }
+
+    .istkult__card-place {
+        margin-right: 0 !important;
+    }
+
+    .istkult__card-square {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav,
+  .header__social,
+  .header__phones {
+        display: none;
+    }
+
+    .hamburger {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .intro__middle a {
+        padding: 0 20px;
+        font-size: 1.4rem;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .intro__middle a span {
+        margin-left: 2px;
+        margin-right: 4px;
+    }
+
+    .intro__middle a img {
+        width: 20px;
+        margin-top: -5px;
+    }
+
+    .intro__title {
+        font-size: 4.1rem;
+    }
+
+    .intro__btn {
+        max-width: 270px;
+        font-size: 2rem;
+    }
+
+    .intro__btn img {
+        max-width: 270px;
+    }
+
+    .intro__btn span, .how__btn span, .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span, .individual__btn span, .mortgage__top-btn span, .mortgage__bottom-btn span, .contact__form button span {
+        font-size: 1.5rem;
+    }
+
+    .how {
+        padding: 50px 0 40px;
+    }
+
+    .how__title {
+        margin-bottom: 30px;
+    }
+
+    .how__middle {
+        margin-bottom: 30px;
+    }
+
+    .how__middle {
+        height: 300px;
+    }
+
+    .how__middle-video {
+        margin-right: 20px;
+    }
+
+    .how__middle-video img {
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .how__middle-numbers-title {
+        font-size: 3rem;
+    }
+
+    .how__middle-arrow {
+        width: 8px;
+        margin-top: 10px;
+        margin-right: 16px;
+    }
+
+    .how__middle-numbers-text {
+        font-size: 2rem;
+    }
+
+    .how__btn img {
+        width: 200px;
+    }
+
+    .poroterm__top, .istkult__top, .popular__top, .benefits__top, .not-enoug__top {
+        margin-bottom: 30px;
+    }
+
+    .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span {
+        font-size: 2rem;
+    }
+
+    .poroterm__card-btn img, .istkult__card-btn img, .popular__card-btn img {
+        width: 220px;
+    }
+
+    .poroterm {
+        padding-bottom: 50px;
+    }
+
+    .poroterm__subtitle, .istkult__subtitle, .popular__subtitle, .benefits__subtitle {
+        font-size: 2rem;
+    }
+
+    .istkult {
+        padding: 50px 0 65px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__title {
+        font-size: 3rem;
+    }
+
+    .intro__middle {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .intro__middle a {
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-right: auto;
+    }
+
+    .intro__middle a:last-child {
+        margin-bottom: 0;
+    }
+
+    .how__middle {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .how__middle-video {
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .how__middle-video img {
+        width: 40px;
+    }
+
+    .how__middle-info-item {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .how__middle-numbers-title {
+        font-size: 2.4rem;
+    }
+
+    .how__middle-numbers-title {
+        font-size: 2.4rem;
+    }
+
+    .how__btn img {
+        width: 180px;
+    }
+
+    .how__middle-info {
+        width: 100%;
+    }
+
+    .poroterm__subtitle, .istkult__subtitle, .popular__subtitle, .benefits__subtitle {
+        font-size: 1.6rem;
+    }
+
+    .poroterm__card-square {
+        font-size: 2rem;
+    }
+
+    .poroterm__card-place {
+        font-size: 2rem;
+    }
+
+    .poroterm__card, .istkult__card, .popular__card {
+        width: 280px;
+    }
+
+    .poroterm__card img, .istkult__card img, .popular__card img {
+        width: 200px;
+    }
+
+    .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span {
+        font-size: 1.6rem;
+    }
+
+    .poroterm__card-btn img {
+        width: 160px;
+    }
+
+    .poroterm__cards div, .istkult__cards div, .popular__cards div {
+        margin-right: 10px;
+    }
+
+    .istkult__card-place {
+        font-size: 2rem;
+    }
+
+    .istkult__card-square {
+        font-size: 2rem;
+    }
+
+    .istkult__card-btn img {
+        width: 160px;
     }
 }

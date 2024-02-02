@@ -1141,6 +1141,9 @@ h2.individual__title {
 }
 
 @media (max-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
   .header {
     font-size: 1.7rem;
   }
@@ -1170,6 +1173,72 @@ h2.individual__title {
   }
   .intro__btn img {
     max-width: 470px;
+  }
+  .how__middle-video {
+    max-width: 550px;
+  }
+  .how__middle-numbers-title {
+    font-size: 5rem;
+  }
+  .how__btn {
+    font-size: 2.7rem;
+  }
+  .poroterm__cards {
+    overflow: auto;
+  }
+  .poroterm__cards, .istkult__cards, .popular__cards {
+    justify-content: flex-start;
+  }
+  .poroterm__cards div, .istkult__cards div, .popular__cards div {
+    margin-right: 20px;
+  }
+  .istkult__cards, .popular__cards, .poroterm__cards {
+    overflow: auto;
+  }
+  .popular__card-price {
+    font-size: 2.2rem;
+  }
+  .popular__card-prices {
+    bottom: 15px;
+    font-size: 2rem;
+  }
+  .popular__card-prices span {
+    font-size: 2rem;
+  }
+  .popular__cards div {
+    margin-right: 0;
+  }
+  .popular__card-btn img {
+    width: 250px;
+  }
+  .popular__card-info {
+    margin-bottom: 15px;
+  }
+  .popular__card {
+    padding-bottom: 64px;
+    margin-right: 20px !important;
+  }
+  .popular__card:last-child {
+    margin-right: 0 !important;
+  }
+  .individual {
+    height: 414px;
+  }
+  .individual__btn img {
+    max-width: 450px;
+  }
+  h2.individual__title {
+    font-size: 4rem;
+  }
+  .individual__image {
+    max-width: 403px;
+  }
+  .benefits__item-text {
+    font-size: 2.7rem;
+  }
+  .benefits__btn {
+    max-width: 940px;
+    font-size: 2.7rem;
   }
 }
 @media (max-width: 992px) {
@@ -1210,6 +1279,93 @@ h2.individual__title {
   .intro__btn img {
     max-width: 340px;
   }
+  h2 {
+    font-size: 4rem;
+  }
+  .how__middle-video {
+    max-width: 400px;
+    margin-right: 50px;
+  }
+  .how__middle-video img {
+    width: 90px;
+  }
+  .how__middle {
+    height: 350px;
+    justify-content: flex-start;
+  }
+  .how__middle-numbers-title {
+    font-size: 4rem;
+  }
+  .how__middle-numbers-text {
+    font-size: 2.5rem;
+  }
+  .how__btn img {
+    max-width: 240px;
+  }
+  .poroterm__card, .istkult__card, .popular__card {
+    max-width: 300px;
+    padding: 15px 10px;
+  }
+  .poroterm__card img, .istkult__card img, .popular__card img {
+    width: 280px;
+  }
+  .poroterm__card-btn img, .istkult__card-btn img, .popular__card-btn img {
+    width: 240px;
+  }
+  .poroterm__card .poroterm__card-info, .istkult__card .poroterm__card-info, .popular__card .poroterm__card-info {
+    margin-right: 0;
+  }
+  .poroterm__card .poroterm__card-place, .istkult__card .poroterm__card-place, .popular__card .poroterm__card-place {
+    margin-right: 0;
+  }
+  .poroterm__card .poroterm__card-square, .istkult__card .poroterm__card-square, .popular__card .poroterm__card-square {
+    margin-right: 0;
+  }
+  .poroterm__card .poroterm__cards div, .poroterm__card .istkult__cards div, .poroterm__card .popular__cards div, .istkult__card .poroterm__cards div, .istkult__card .istkult__cards div, .istkult__card .popular__cards div, .popular__card .poroterm__cards div, .popular__card .istkult__cards div, .popular__card .popular__cards div {
+    margin-right: 0;
+  }
+  .istkult__cards {
+    overflow: auto;
+  }
+  .istkult__card-place {
+    margin-right: 0 !important;
+  }
+  .istkult__card-square {
+    margin-right: 0 !important;
+  }
+  .popular__card {
+    padding-bottom: 60px;
+  }
+  .popular__card-price {
+    font-size: 2rem;
+  }
+  .popular__card-prices {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  .popular__card-prices span {
+    font-size: 1.8rem;
+  }
+  .popular__card-oldprice.divider:before {
+    width: 16px;
+    left: -22px;
+    top: 15px;
+  }
+  .popular__cards {
+    overflow: scroll;
+  }
+  .individual__btn img {
+    max-width: 310px;
+  }
+  .individual__image {
+    margin-top: -123px;
+  }
+  .individual {
+    height: 354px;
+  }
+  .individual__image {
+    max-width: 310px;
+  }
 }
 @media (max-width: 768px) {
   .header__nav,
@@ -1247,6 +1403,123 @@ h2.individual__title {
   .intro__btn span, .how__btn span, .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span, .individual__btn span, .mortgage__top-btn span, .mortgage__bottom-btn span, .contact__form button span {
     font-size: 1.5rem;
   }
+  .how {
+    padding: 50px 0 40px;
+  }
+  .how__title {
+    margin-bottom: 30px;
+  }
+  .how__middle {
+    margin-bottom: 30px;
+  }
+  .how__middle {
+    height: 300px;
+  }
+  .how__middle-video {
+    margin-right: 20px;
+  }
+  .how__middle-video img {
+    width: 60px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .how__middle-numbers-title {
+    font-size: 3rem;
+  }
+  .how__middle-arrow {
+    width: 8px;
+    margin-top: 10px;
+    margin-right: 16px;
+  }
+  .how__middle-numbers-text {
+    font-size: 2rem;
+  }
+  .how__btn img {
+    width: 200px;
+  }
+  .poroterm__top, .istkult__top, .popular__top, .benefits__top, .not-enoug__top {
+    margin-bottom: 30px;
+  }
+  .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span {
+    font-size: 2rem;
+  }
+  .poroterm__card-btn img, .istkult__card-btn img, .popular__card-btn img {
+    width: 220px;
+  }
+  .poroterm {
+    padding-bottom: 50px;
+  }
+  .poroterm__subtitle, .istkult__subtitle, .popular__subtitle, .benefits__subtitle {
+    font-size: 2rem;
+  }
+  .istkult {
+    padding: 50px 0 65px;
+  }
+  .popular {
+    padding: 50px 0 130px;
+  }
+  .popular__top {
+    margin-bottom: 30px;
+  }
+  .popular {
+    padding-bottom: 65px;
+  }
+  h2.individual__title {
+    font-size: 2.8rem;
+  }
+  .individual__subtitle {
+    font-size: 2rem;
+  }
+  .individual__btn img {
+    max-width: 270px;
+  }
+  .individual {
+    padding: 40px 0;
+    height: 270px;
+  }
+  h2.individual__title {
+    margin-bottom: 8px;
+  }
+  .individual__subtitle {
+    margin-bottom: 13px;
+  }
+  .individual__image {
+    max-width: 281px;
+    transform: translateX(0);
+    margin-top: -119px;
+  }
+  .individual__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .individual__btn {
+    max-width: 270px;
+  }
+  .benefits {
+    padding: 50px 0 0 0;
+  }
+  .benefits__item-image {
+    max-width: 100px;
+  }
+  .benefits__item-title {
+    font-size: 2rem;
+  }
+  .benefits__item-text {
+    font-size: 2rem;
+  }
+  .benefits__list {
+    grid-row-gap: 0;
+    margin-bottom: 40px;
+  }
+  .benefits__btn {
+    max-width: 500px;
+    font-size: 1.4rem;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 @media (max-width: 576px) {
   .intro__title {
@@ -1262,5 +1535,129 @@ h2.individual__title {
   }
   .intro__middle a:last-child {
     margin-bottom: 0;
+  }
+  .how__middle {
+    flex-direction: column;
+    height: 100%;
+  }
+  .how__middle-video {
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .how__middle-video img {
+    width: 40px;
+  }
+  .how__middle-info-item {
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  .how__middle-numbers-title {
+    font-size: 2.4rem;
+  }
+  .how__middle-numbers-title {
+    font-size: 2.4rem;
+  }
+  .how__btn img {
+    width: 180px;
+  }
+  .how__middle-info {
+    width: 100%;
+  }
+  .poroterm__subtitle, .istkult__subtitle, .popular__subtitle, .benefits__subtitle {
+    font-size: 1.6rem;
+  }
+  .poroterm__card-square {
+    font-size: 2rem;
+  }
+  .poroterm__card-place {
+    font-size: 2rem;
+  }
+  .poroterm__card, .istkult__card, .popular__card {
+    width: 280px;
+  }
+  .poroterm__card img, .istkult__card img, .popular__card img {
+    width: 200px;
+  }
+  .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span {
+    font-size: 1.6rem;
+  }
+  .poroterm__card-btn img {
+    width: 160px;
+  }
+  .poroterm__cards div, .istkult__cards div, .popular__cards div {
+    margin-right: 10px;
+  }
+  .istkult__card-place {
+    font-size: 2rem;
+  }
+  .istkult__card-square {
+    font-size: 2rem;
+  }
+  .istkult__card-btn img {
+    width: 160px;
+  }
+  .popular__card-place,
+  .popular__card-square {
+    font-size: 2rem;
+  }
+  .popular__cards div {
+    margin-right: 0 !important;
+  }
+  .popular__cards .popular__card {
+    margin-right: 10px !important;
+  }
+  .popular__cards img {
+    width: 160px;
+  }
+  .popular__card-price {
+    font-size: 1.2rem;
+  }
+  .popular__card-price span {
+    font-size: 1rem;
+  }
+  .popular__card-oldprice {
+    font-size: 1rem;
+  }
+  .popular__card-oldprice.divider:before {
+    width: 14px;
+    left: -17px;
+    top: 8px;
+  }
+  .popular__card-oldprice.divider:after {
+    height: 1px;
+  }
+  .individual__image {
+    display: none;
+  }
+  h2.individual__title {
+    font-size: 2.6rem;
+  }
+  .individual__subtitle {
+    font-size: 1.8rem;
+  }
+  .benefits__list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+    grid-row-gap: 20px;
+    margin-bottom: 10px;
+  }
+  .benefits__item-image {
+    max-width: 50px;
+  }
+  .benefits__btn {
+    font-size: 10px;
+    padding: 0;
+    width: 340px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 374px) {
+  .benefits__btn {
+    font-size: 9px;
+    width: 300px;
   }
 }
