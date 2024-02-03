@@ -995,6 +995,10 @@ h2.individual__title {
     background: url("../images/not-enough/not-enough-bg.jpg") center/cover no-repeat;
 }
 
+.not-enough img {
+    width: 100%;
+}
+
 .mortgage {
     padding: 37px 0 31px;
     background: url("../images/mortgage/mortgage-bg.jpg") center/cover no-repeat;
@@ -1548,6 +1552,31 @@ h2.individual__title {
     .individual__image {
         max-width: 310px;
     }
+
+    .mortgage-benefits__item-title {
+        font-size: 5rem;
+    }
+
+    .mortgage__top-btn img,
+  .mortgage__bottom-btn img {
+        width: 240px;
+    }
+
+    .mortgage-without__text {
+        font-size: 2.4rem;
+    }
+
+    .mortgage-without__images img {
+        max-width: 200px;
+    }
+
+    .mortgage__bottom-subtitle {
+        font-size: 2.4rem;
+    }
+
+    .mortgage__bottom-gift.divider {
+        width: 180px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1751,6 +1780,69 @@ h2.individual__title {
         height: 50px;
         line-height: 50px;
     }
+
+    .not-enough {
+        padding: 50px 0 13px;
+    }
+
+    .not-enoug__subtitle {
+        font-size: 2rem;
+    }
+
+    .mortgage {
+        padding: 18px 0 15px;
+    }
+
+    .mortgage__top-title,
+  .mortgage__top-benefits {
+        margin-bottom: 28px;
+    }
+
+    .mortgage__top {
+        margin-bottom: 50px;
+    }
+
+    .mortgage-benefits__item-title {
+        font-size: 3rem;
+    }
+
+    .mortgage-benefits__item-subtitle {
+        font-size: 2rem;
+    }
+
+    .mortgage-benefits__divider {
+        height: 55px;
+    }
+
+    .mortgage__top-btn img, .mortgage__bottom-btn img {
+        width: 200px;
+    }
+
+    .mortgage-without__text {
+        font-size: 2rem;
+        margin-bottom: 6px;
+    }
+
+    .mortgage__bottom-subtitle {
+        font-size: 2rem;
+        max-width: 359px;
+    }
+
+    .mortgage__bottom-gift.divider {
+        width: 160px;
+        -webkit-transform: translateX(-12px);
+        transform: translateX(-12px);
+    }
+
+    .mortgage_-bottom-right .mortgage__bottom-gift {
+        left: -32px;
+        top: -35px;
+        width: 80px;
+    }
+
+    .mortgage__top-without {
+        margin-left: 28px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1925,6 +2017,106 @@ h2.individual__title {
         width: 340px;
         height: 30px;
         line-height: 30px;
+    }
+
+    .not-enoug__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .mortgage__top-title, .mortgage__top-benefits {
+        margin-bottom: 14px;
+    }
+
+    .mortgage__top-action {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .mortgage__bottom-gift {
+        display: none;
+    }
+
+    .mortgage__bottom-wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .mortgage__top-benefits {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .mortgage-benefits__item {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .mortgage-benefits__divider {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mortgage-benefits__item-title {
+        font-size: 2rem;
+    }
+
+    .mortgage-benefits__item-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .mortgage-benefits__divider {
+        height: 25px;
+    }
+
+    .mortgage__top-btn img, .mortgage__bottom-btn img {
+        width: 180px;
+    }
+
+    .mortgage__top-title {
+        margin-bottom: 20px;
+    }
+
+    .mortgage__top-benefits {
+        margin-bottom: 20px;
+    }
+
+    .mortgage__top-without {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .mortgage-without__text {
+        font-size: 1.8rem;
+    }
+
+    .mortgage-without__images {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .mortgage-without__images img {
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .mortgage__bottom-divider {
+        margin-bottom: 20px;
+    }
+
+    .mortgage__bottom-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .mortgage__bottom-left {
+        margin-bottom: 20px;
+    }
+
+    .mortgage_-bottom-right {
+        margin-right: auto;
     }
 }
 
