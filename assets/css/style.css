@@ -1160,6 +1160,11 @@ h2.individual__title {
     margin-top: 40px;
 }
 
+.contact__form img {
+    width: 100%;
+    max-width: 698px;
+}
+
 .footer {
     padding: 90px 0 100px;
     background: url("../images/footer-bg.jpg") center/cover no-repeat;
@@ -1386,6 +1391,23 @@ h2.individual__title {
         max-width: 940px;
         font-size: 2.7rem;
     }
+
+    .contact__bottom {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .contact {
+        padding: 50px 0 100px 0;
+    }
+
+    .contact__form {
+        margin-right: 20px;
+    }
+
+    .contact__image {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1576,6 +1598,42 @@ h2.individual__title {
 
     .mortgage__bottom-gift.divider {
         width: 180px;
+    }
+
+    .contact__form {
+        margin-right: 20px;
+    }
+
+    .contact__form button {
+        margin-top: 20px;
+    }
+
+    .contact__image {
+        max-width: 400px;
+    }
+
+    .footer {
+        padding: 45px 0 50px;
+    }
+
+    .footer__partners {
+        margin-bottom: 40px;
+    }
+
+    .footer__divider {
+        margin-bottom: 50px;
+    }
+
+    .footer__bottom .footer__title {
+        margin-bottom: 25px;
+    }
+
+    .footer__place-top {
+        font-size: 2.5rem;
+    }
+
+    .footer__place {
+        margin-bottom: 30px;
     }
 }
 
@@ -1842,6 +1900,68 @@ h2.individual__title {
 
     .mortgage__top-without {
         margin-left: 28px;
+    }
+
+    .contact__subtitle {
+        font-size: 2rem;
+    }
+
+    .contact__image {
+        max-width: 300px;
+    }
+
+    .contact__form input {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .contact__form button {
+        margin-top: 5px;
+    }
+
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact__form button span {
+        font-size: 2rem;
+    }
+
+    .footer__partners {
+        margin-bottom: 20px;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer__partners a {
+        margin: 0 10px 10px 0;
+    }
+
+    .footer__partners img {
+        max-width: 150px;
+    }
+
+    .footer__divider {
+        margin-bottom: 25px;
+    }
+
+    .place-top__bold {
+        margin-bottom: 8px;
+    }
+
+    .place-top__bold,
+  .place-top__text,
+  .place-bottom__bold,
+  .place-bottom__text {
+        font-size: 1.8rem;
+    }
+
+    .footer__place {
+        margin-bottom: 15px;
+    }
+
+    .footer__social img {
+        width: 30px;
     }
 }
 
@@ -2117,6 +2237,78 @@ h2.individual__title {
 
     .mortgage_-bottom-right {
         margin-right: auto;
+    }
+
+    .contact__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .contact__bottom {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .contact__image {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact__top {
+        margin-bottom: 20px;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__form input {
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        padding: 30px 0 25px;
+    }
+
+    .footer__title {
+        margin-bottom: 18px;
+    }
+
+    .footer__partners a {
+        margin: 0 5px 5px 0;
+    }
+
+    .footer__partners img {
+        max-width: 89px;
+        max-height: 50px;
+    }
+
+    .footer__partners {
+        margin-bottom: 10px;
+    }
+
+    .footer__divider {
+        margin-bottom: 15px;
+    }
+
+    .footer__place {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer__place-top {
+        margin-bottom: 26px;
+    }
+
+    .footer__place-divider {
+        display: none;
+    }
+
+    .footer__place-item {
+        margin-bottom: 20px;
     }
 }
 
