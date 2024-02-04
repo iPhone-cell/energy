@@ -732,6 +732,7 @@ h2 {
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  background: url("../images/gallery/1.jpg") center/cover no-repeat;
 }
 .how__middle-video img {
   width: 106px;
@@ -1341,7 +1342,7 @@ h2.individual__title {
     width: 24px;
   }
   .intro__main {
-    height: 650px;
+    height: 500px;
   }
   .intro__title {
     font-size: 5.1rem;
@@ -2047,7 +2048,7 @@ h2.individual__title {
   .slick-arrow {
     bottom: 0;
     margin-top: 0;
-    margin-bottom: -520px;
+    margin-bottom: -400px;
   }
   .slick-arrow img {
     width: 30px;
@@ -2334,4 +2335,13 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back {
+  color: #DB9554;
+  text-decoration: underline;
+}
+.back:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
