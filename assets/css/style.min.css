@@ -1241,6 +1241,7 @@ h2.individual__title {
   }
   .poroterm__cards {
     overflow: auto;
+    padding-bottom: 15px;
   }
   .poroterm__cards, .istkult__cards, .popular__cards {
     justify-content: flex-start;
@@ -2044,11 +2045,6 @@ h2.individual__title {
   }
   .footer__place-item {
     margin-bottom: 20px;
-  }
-  .slick-arrow {
-    bottom: 0;
-    margin-top: 0;
-    margin-bottom: -400px;
   }
   .slick-arrow img {
     width: 30px;
