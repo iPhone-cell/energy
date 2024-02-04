@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="assets/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -19,25 +21,25 @@
     <header class="header">
         <div class="container">
             <div class="header__main">
-                <a href="#" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="assets/images/logo.svg" alt="Многопрофильная строительная компания Энергия">
                 </a>
                 <nav class="header__nav">
                     <ul>
                         <li>
-                            <a href="#porotherm">Проекты</a>
+                            <a href="#" data-scroll="#porotherm">Проекты</a>
                         </li>
                         <li>
-                            <a href="#popular">Объекты</a>
+                            <a href="#" data-scroll="#popular">Объекты</a>
                         </li>
                         <li>
-                            <a href="#notEnough">Ипотека</a>
+                            <a href="#" data-scroll="#notEnough">Ипотека</a>
                         </li>
                         <li>
-                            <a href="#how">О компании</a>
+                            <a href="#" data-scroll="#how">О компании</a>
                         </li>
                         <li>
-                            <a href="#contacts">Контакты</a>
+                            <a href="#" data-scroll="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -57,19 +59,19 @@
                     <nav>
                         <ul>
                             <li>
-                                <a class="nav-link" href="#">Проекты</a>
+                                <a class="nav-link" href="#" data-scroll="#porotherm">Проекты</a>
                             </li>
                             <li>
-                                <a  class="nav-link" href="#">Объекты</a>
+                                <a  class="nav-link" href="#" data-scroll="#popular">Объекты</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="#">Ипотека</a>
+                                <a class="nav-link" href="#" data-scroll="#notEnough">Ипотека</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="#">О компании</a>
+                                <a class="nav-link" href="#" data-scroll="#how">О компании</a>
                             </li>
                             <li>
-                                <a  class="nav-link" href="#">Контакты</a>
+                                <a  class="nav-link" href="#" data-scroll="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -104,14 +106,14 @@
                         в Твери и Москве
                     </h1>
                     <div class="intro__middle">
-                        <a href="#porotherm">
+                        <a href="#" data-scroll="#porotherm">
                             Из теплой керамики <span>POROTERM</span><img src="assets/images/link.svg" alt="">
                         </a>
-                        <a href="#istkult">
+                        <a href="#" data-scroll="#istkult">
                             Из газоблока <span>ISTKULT</span><img src="assets/images/link.svg" alt="">
                         </a>
                     </div>
-                    <a href="#contacts" class="intro__btn">
+                    <a href="#" class="intro__btn" data-scroll="#contacts">
                         <img src="assets/images/buttons/intro-btn.svg" alt="">
                         <span>Заказать расчет сметы бесплатно</span>
                     </a>
@@ -196,7 +198,7 @@
                     </div>
                     <div class="poroterm__cards">
                         <div class="poroterm__card">
-                            <img src="assets/images/poroterm/poroterm.jpg" alt="д. Палкино" class="poroterm__card-img">
+                            <a href="gallery.html"><img src="assets/images/poroterm/poroterm.jpg" alt="д. Палкино" class="poroterm__card-img"></a>
                             <div class="poroterm__card-info">
                                 <div class="poroterm__card-place">
                                     д. Палкино
@@ -220,7 +222,7 @@
                                     Площадь 170м2
                                 </div>
                             </div>
-                            <a href="#contacts" class="poroterm__card-btn">
+                            <a href="gallery.html" class="poroterm__card-btn">
                                 <img src="assets/images/buttons/poroterm-btn.svg" alt="">
                                 <span>Узнать цену</span>
                             </a>
@@ -235,7 +237,7 @@
                                     Площадь 200м2
                                 </div>
                             </div>
-                            <a href="#contacts" class="poroterm__card-btn">
+                            <a href="gallery.html" class="poroterm__card-btn">
                                 <img src="assets/images/buttons/poroterm-btn.svg" alt="">
                                 <span>Узнать цену</span>
                             </a>
@@ -266,7 +268,7 @@
                                     Площадь 150м2
                                 </div>
                             </div>
-                            <a href="#contacts" class="istkult__card-btn">
+                            <a href="gallery.html" class="istkult__card-btn">
                                 <img src="assets/images/buttons/istkult-btn.svg" alt="">
                                 <span>Узнать цену</span>
                             </a>
@@ -281,7 +283,7 @@
                                     Площадь 170м2
                                 </div>
                             </div>
-                            <a href="#contacts" class="istkult__card-btn">
+                            <a href="gallery.html" class="istkult__card-btn">
                                 <img src="assets/images/buttons/istkult-btn.svg" alt="">
                                 <span>Узнать цену</span>
                             </a>
@@ -296,7 +298,7 @@
                                     Площадь 200м2
                                 </div>
                             </div>
-                            <a href="#contacts" class="istkult__card-btn">
+                            <a href="gallery.html" class="istkult__card-btn">
                                 <img src="assets/images/buttons/istkult-btn.svg" alt="">
                                 <span>Узнать цену</span>
                             </a>
@@ -314,66 +316,141 @@
                         </h2>
                     </div>
                     <div class="popular__cards">
-                        <div class="popular__card">
-                            <img src="assets/images/poroterm/poroterm.jpg" alt="Марбург" class="popular__card-img">
-                            <div class="popular__card-info">
-                                <div class="popular__card-place">
-                                    Марбург
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Марбург" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Марбург
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 150м2
+                                    </div>
                                 </div>
-                                <div class="popular__card-square">
-                                    Площадь 150м2
-                                </div>
-                            </div>
-                            <a href="#contacts" class="popular__card-btn">
-                                <img src="assets/images/buttons/poroterm-btn.svg" alt="">
-                                <span>Заказать проект</span>
-                            </a>
-                            <div class="popular__card-prices">
-                                <div class="popular__card-price">
-                                    Цена: <span>6,3 млн</span>
-                                </div>
-                                <div class="popular__card-oldprice divider">
-                                    7,5 млн
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular__card">
-                            <img src="assets/images/poroterm/poroterm.jpg" alt="Мюнхен" class="popular__card-img">
-                            <div class="popular__card-info">
-                                <div class="popular__card-place">
-                                    Мюнхен
-                                </div>
-                                <div class="popular__card-square">
-                                    Площадь 170м2
-                                </div>
-                            </div>
-                            <a href="#contacts" class="popular__card-btn">
-                                <img src="assets/images/buttons/poroterm-btn.svg" alt="">
-                                <span>Заказать проект</span>
-                            </a>
-                            <div class="popular__card-prices">
-                                <div class="popular__card-price">
-                                    Цена: <span>7,2 млн</span>
+                                <a href="#contacts" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>6,3 млн</span>
+                                    </div>
+                                    <div class="popular__card-oldprice divider">
+                                        7,5 млн
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="popular__card">
-                            <img src="assets/images/poroterm/poroterm.jpg" alt="Штутгарт" class="popular__card-img">
-                            <div class="popular__card-info">
-                                <div class="popular__card-place">
-                                    Штутгарт
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Мюнхен" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Мюнхен
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 170м2
+                                    </div>
                                 </div>
-                                <div class="popular__card-square">
-                                    Площадь 250м2
+                                <a href="#contacts" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>7,2 млн</span>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#contacts" class="popular__card-btn">
-                                <img src="assets/images/buttons/poroterm-btn.svg" alt="">
-                                <span>Заказать проект</span>
-                            </a>
-                            <div class="popular__card-prices">
-                                <div class="popular__card-price">
-                                    Цена: <span>9,8 млн</span>
+                        </div>
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Штутгарт" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Штутгарт
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 250м2
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>9,8 млн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Марбург" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Марбург
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 150м2
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>6,3 млн</span>
+                                    </div>
+                                    <div class="popular__card-oldprice divider">
+                                        7,5 млн
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Мюнхен" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Мюнхен
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 170м2
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>7,2 млн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="popular__card">
+                                <img src="assets/images/poroterm/poroterm.jpg" alt="Штутгарт" class="popular__card-img">
+                                <div class="popular__card-info">
+                                    <div class="popular__card-place">
+                                        Штутгарт
+                                    </div>
+                                    <div class="popular__card-square">
+                                        Площадь 250м2
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="popular__card-btn">
+                                    <img src="assets/images/buttons/poroterm-btn.svg" alt="">
+                                    <span>Заказать проект</span>
+                                </a>
+                                <div class="popular__card-prices">
+                                    <div class="popular__card-price">
+                                        Цена: <span>9,8 млн</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -451,7 +528,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contacts" class="benefits__btn">Однажды построив дом с нами, вы захотите сделать это снова!</a>
+                    <a href="#" data-scroll="#contacts" class="benefits__btn">Однажды построив дом с нами, вы захотите сделать это снова!</a>
                 </div>
             </div>
         </section>
@@ -546,7 +623,7 @@
                             </div>
                             <img src="assets/images/mortgage/gift-big.png" alt="" class="mortgage__bottom-gift divider">
                             <div class="mortgage_-bottom-right">
-                                <a href="#contacts" class="mortgage__bottom-btn">
+                                <a href="#" data-scroll="#contacts" class="mortgage__bottom-btn">
                                     <img src="assets/images/buttons/poroterm-btn.svg" alt="">
                                     <span>Хочу подарок</span>
                                 </a>
@@ -585,7 +662,7 @@
             </div>
         </section>
     </main>
-
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__main">
@@ -701,6 +778,20 @@
             </div>
         </div>
     </footer>
+
+    
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery Modal -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
 
     <script src="assets/js/app.js"></script>
 </body>

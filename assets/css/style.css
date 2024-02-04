@@ -339,12 +339,24 @@ template {
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 2.9rem;
     color: #262626;
     font-family: Mazzard, sans-serif;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: 0;
+}
+
+button:focus {
+    border: 0;
+    outline: none;
 }
 
 .container {
@@ -396,6 +408,12 @@ h2 {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.poroterm__cards a:hover,
+.istkult__cards a:hover,
+.popular__cards a:hover {
+    opacity: 0.92;
 }
 
 .poroterm__card,
@@ -523,6 +541,25 @@ h2 {
     text-align: center;
 }
 
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -120px;
+    transition: all 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 0.9;
+}
+
+.slick-prev {
+    right: 71px;
+    z-index: 1;
+}
+
 .header {
     background: #262626;
     color: #FFF;
@@ -614,7 +651,7 @@ h2 {
 }
 
 .header__phones a:hover {
-    color: #FFF200;
+    color: #DB9554;
 }
 
 .hamburger {
@@ -645,6 +682,24 @@ h2 {
 
 .hamburger:hover .long {
     width: 30px;
+}
+
+.hamburger.active span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger.active span.long {
+    opacity: 0;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .intro {
@@ -1329,7 +1384,7 @@ h2.individual__title {
         margin-right: 20px;
     }
 
-    .istkult__cards, .popular__cards, .poroterm__cards {
+    .istkult__cards, .poroterm__cards {
         overflow: auto;
     }
 
@@ -1346,7 +1401,16 @@ h2.individual__title {
         font-size: 2rem;
     }
 
-    .popular__cards div {
+    .popular__cards .popular__card {
+        margin-right: 10px;
+    }
+
+    .slick-slide img {
+        max-width: 100%;
+    }
+
+    .popular__cards .popular__card-place,
+  .popular__cards .popular__card-square {
         margin-right: 0;
     }
 
@@ -1407,6 +1471,18 @@ h2.individual__title {
 
     .contact__image {
         max-width: 500px;
+    }
+
+    .slick-prev {
+        right: 110px;
+    }
+
+    .slick-next {
+        right: 30px;
+    }
+
+    .popular__card .popular__card-prices {
+        margin-right: 0;
     }
 }
 
@@ -1555,10 +1631,6 @@ h2.individual__title {
         top: 15px;
     }
 
-    .popular__cards {
-        overflow: scroll;
-    }
-
     .individual__btn img {
         max-width: 310px;
     }
@@ -1634,6 +1706,23 @@ h2.individual__title {
 
     .footer__place {
         margin-bottom: 30px;
+    }
+
+    .slick-arrow {
+        margin-top: -70px;
+        right: 50px;
+    }
+
+    .slick-arrow img {
+        width: 40px;
+    }
+
+    .slick-prev {
+        right: 110px;
+    }
+
+    .popular__cards div {
+        margin-right: 5px;
     }
 }
 
@@ -1963,6 +2052,44 @@ h2.individual__title {
     .footer__social img {
         width: 30px;
     }
+
+    .header {
+        padding: 12px 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        left: -100%;
+        width: 100%;
+        position: fixed;
+        top: 66px;
+        gap: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .mobile-menu nav {
+        margin-top: -66px;
+    }
+
+    .mobile-menu li {
+        margin: 8px 0;
+        font-size: 2.9rem;
+    }
+
+    .mobile-menu.active {
+        left: 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2037,11 +2164,11 @@ h2.individual__title {
         font-size: 2rem;
     }
 
-    .poroterm__card, .istkult__card, .popular__card {
+    .poroterm__card, .istkult__card {
         width: 280px;
     }
 
-    .poroterm__card img, .istkult__card img, .popular__card img {
+    .poroterm__card img, .istkult__card img {
         width: 200px;
     }
 
@@ -2082,16 +2209,12 @@ h2.individual__title {
         margin-right: 10px !important;
     }
 
-    .popular__cards img {
-        width: 160px;
-    }
-
     .popular__card-price {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .popular__card-price span {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     .popular__card-oldprice {
@@ -2310,6 +2433,24 @@ h2.individual__title {
     .footer__place-item {
         margin-bottom: 20px;
     }
+
+    .slick-arrow {
+        bottom: 0;
+        margin-top: 0;
+        margin-bottom: -520px;
+    }
+
+    .slick-arrow img {
+        width: 30px;
+    }
+
+    .slick-arrow {
+        right: 0;
+    }
+
+    .slick-prev {
+        right: 40px;
+    }
 }
 
 @media (max-width: 374px) {
@@ -2317,4 +2458,272 @@ h2.individual__title {
         font-size: 9px;
         width: 300px;
     }
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
