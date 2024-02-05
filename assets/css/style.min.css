@@ -399,10 +399,84 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-.poroterm__cards a:hover,
-.istkult__cards a:hover,
-.popular__cards a:hover {
+.poroterm__cards .poroterm__card-link,
+.poroterm__cards .istkult__card-link,
+.poroterm__cards .popular__card-link,
+.istkult__cards .poroterm__card-link,
+.istkult__cards .istkult__card-link,
+.istkult__cards .popular__card-link,
+.popular__cards .poroterm__card-link,
+.popular__cards .istkult__card-link,
+.popular__cards .popular__card-link {
+  position: relative;
+}
+.poroterm__cards .poroterm__card-link img,
+.poroterm__cards .istkult__card-link img,
+.poroterm__cards .popular__card-link img,
+.istkult__cards .poroterm__card-link img,
+.istkult__cards .istkult__card-link img,
+.istkult__cards .popular__card-link img,
+.popular__cards .poroterm__card-link img,
+.popular__cards .istkult__card-link img,
+.popular__cards .popular__card-link img {
+  transition: all 0.3s ease;
+}
+.poroterm__cards .poroterm__card-link:hover,
+.poroterm__cards .istkult__card-link:hover,
+.poroterm__cards .popular__card-link:hover,
+.istkult__cards .poroterm__card-link:hover,
+.istkult__cards .istkult__card-link:hover,
+.istkult__cards .popular__card-link:hover,
+.popular__cards .poroterm__card-link:hover,
+.popular__cards .istkult__card-link:hover,
+.popular__cards .popular__card-link:hover {
   opacity: 0.92;
+  height: 100%;
+}
+.poroterm__cards .poroterm__card-link:hover img,
+.poroterm__cards .istkult__card-link:hover img,
+.poroterm__cards .popular__card-link:hover img,
+.istkult__cards .poroterm__card-link:hover img,
+.istkult__cards .istkult__card-link:hover img,
+.istkult__cards .popular__card-link:hover img,
+.popular__cards .poroterm__card-link:hover img,
+.popular__cards .istkult__card-link:hover img,
+.popular__cards .popular__card-link:hover img {
+  filter: brightness(15%);
+}
+.poroterm__cards .poroterm__card-link:hover span,
+.poroterm__cards .istkult__card-link:hover span,
+.poroterm__cards .popular__card-link:hover span,
+.istkult__cards .poroterm__card-link:hover span,
+.istkult__cards .istkult__card-link:hover span,
+.istkult__cards .popular__card-link:hover span,
+.popular__cards .poroterm__card-link:hover span,
+.popular__cards .istkult__card-link:hover span,
+.popular__cards .popular__card-link:hover span {
+  opacity: 1;
+  display: block;
+}
+.poroterm__cards .poroterm__card-link span,
+.poroterm__cards .istkult__card-link span,
+.poroterm__cards .popular__card-link span,
+.istkult__cards .poroterm__card-link span,
+.istkult__cards .istkult__card-link span,
+.istkult__cards .popular__card-link span,
+.popular__cards .poroterm__card-link span,
+.popular__cards .istkult__card-link span,
+.popular__cards .popular__card-link span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #DB9554;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.popular__card-link span {
+  left: 0 !important;
 }
 
 .poroterm__card,
