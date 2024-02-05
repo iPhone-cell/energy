@@ -495,6 +495,15 @@ h2 {
   transition: all 0.3s ease;
 }
 
+.poroterm__card-link-mobile,
+.istkult__card-link-mobile,
+.popular__card-link-mobile {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #DB9554;
+  display: none;
+}
+
 .poroterm__card-img,
 .istkult__card-img,
 .popular__card-img {
@@ -548,6 +557,7 @@ h2 {
 .individual__btn,
 .mortgage__top-btn,
 .mortgage__bottom-btn,
+.gallery-btn,
 .contact__form button {
   position: relative;
   max-width: 525px;
@@ -561,6 +571,7 @@ h2 {
 .individual__btn img,
 .mortgage__top-btn img,
 .mortgage__bottom-btn img,
+.gallery-btn img,
 .contact__form button img {
   filter: drop-shadow(0px 4px 106px #DB9554);
 }
@@ -572,6 +583,7 @@ h2 {
 .individual__btn:hover,
 .mortgage__top-btn:hover,
 .mortgage__bottom-btn:hover,
+.gallery-btn:hover,
 .contact__form button:hover {
   transform: scale(1.02);
   transition: all 0.3s ease;
@@ -584,6 +596,7 @@ h2 {
 .individual__btn span,
 .mortgage__top-btn span,
 .mortgage__bottom-btn span,
+.gallery-btn span,
 .contact__form button span {
   position: absolute;
   left: 50%;
@@ -1215,6 +1228,9 @@ h2.individual__title {
 .footer__partners a:hover {
   transform: scale(1.1);
 }
+.footer__partners a img {
+  border-radius: 10px;
+}
 
 .footer__divider {
   width: 100%;
@@ -1580,6 +1596,11 @@ h2.individual__title {
   }
   .popular__cards div {
     margin-right: 5px;
+  }
+  .poroterm__card-link-mobile,
+  .istkult__card-link-mobile,
+  .popular__card-link-mobile {
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -2157,6 +2178,12 @@ h2.individual__title {
   .modal .contact__form button {
     margin-top: 0 !important;
   }
+  .gallery-main .gallery-btn span {
+    font-size: 2rem;
+  }
+  .gallery-main .gallery-btn img {
+    width: 180px;
+  }
 }
 @media (max-width: 374px) {
   .benefits__btn {
@@ -2166,6 +2193,7 @@ h2.individual__title {
 }
 .gallery-main {
   padding-top: 180px;
+  padding-bottom: 50px;
   /* Create four equal columns that floats next to eachother */
   /* Modal Content */
   /* The Close Button */
@@ -2190,6 +2218,7 @@ h2.individual__title {
   content: "";
   display: table;
   clear: both;
+  margin-bottom: 20px;
 }
 .gallery-main .column {
   float: left;
@@ -2401,6 +2430,15 @@ h2.individual__title {
 .gallery-main .back:hover {
   text-decoration: underline;
   opacity: 0.8;
+}
+.gallery-main .gallery-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 2560px;
+}
+.gallery-main .gallery-btn img {
+  max-width: 250px;
 }
 
 .jquery-modal.blocker.current {

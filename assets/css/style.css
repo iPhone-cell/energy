@@ -410,10 +410,91 @@ h2 {
     align-items: center;
 }
 
-.poroterm__cards a:hover,
-.istkult__cards a:hover,
-.popular__cards a:hover {
+.poroterm__cards .poroterm__card-link,
+.poroterm__cards .istkult__card-link,
+.poroterm__cards .popular__card-link,
+.istkult__cards .poroterm__card-link,
+.istkult__cards .istkult__card-link,
+.istkult__cards .popular__card-link,
+.popular__cards .poroterm__card-link,
+.popular__cards .istkult__card-link,
+.popular__cards .popular__card-link {
+    position: relative;
+}
+
+.poroterm__cards .poroterm__card-link img,
+.poroterm__cards .istkult__card-link img,
+.poroterm__cards .popular__card-link img,
+.istkult__cards .poroterm__card-link img,
+.istkult__cards .istkult__card-link img,
+.istkult__cards .popular__card-link img,
+.popular__cards .poroterm__card-link img,
+.popular__cards .istkult__card-link img,
+.popular__cards .popular__card-link img {
+    transition: all 0.3s ease;
+}
+
+.poroterm__cards .poroterm__card-link:hover,
+.poroterm__cards .istkult__card-link:hover,
+.poroterm__cards .popular__card-link:hover,
+.istkult__cards .poroterm__card-link:hover,
+.istkult__cards .istkult__card-link:hover,
+.istkult__cards .popular__card-link:hover,
+.popular__cards .poroterm__card-link:hover,
+.popular__cards .istkult__card-link:hover,
+.popular__cards .popular__card-link:hover {
     opacity: 0.92;
+    height: 100%;
+}
+
+.poroterm__cards .poroterm__card-link:hover img,
+.poroterm__cards .istkult__card-link:hover img,
+.poroterm__cards .popular__card-link:hover img,
+.istkult__cards .poroterm__card-link:hover img,
+.istkult__cards .istkult__card-link:hover img,
+.istkult__cards .popular__card-link:hover img,
+.popular__cards .poroterm__card-link:hover img,
+.popular__cards .istkult__card-link:hover img,
+.popular__cards .popular__card-link:hover img {
+    -webkit-filter: brightness(15%);
+    filter: brightness(15%);
+}
+
+.poroterm__cards .poroterm__card-link:hover span,
+.poroterm__cards .istkult__card-link:hover span,
+.poroterm__cards .popular__card-link:hover span,
+.istkult__cards .poroterm__card-link:hover span,
+.istkult__cards .istkult__card-link:hover span,
+.istkult__cards .popular__card-link:hover span,
+.popular__cards .poroterm__card-link:hover span,
+.popular__cards .istkult__card-link:hover span,
+.popular__cards .popular__card-link:hover span {
+    opacity: 1;
+    display: block;
+}
+
+.poroterm__cards .poroterm__card-link span,
+.poroterm__cards .istkult__card-link span,
+.poroterm__cards .popular__card-link span,
+.istkult__cards .poroterm__card-link span,
+.istkult__cards .istkult__card-link span,
+.istkult__cards .popular__card-link span,
+.popular__cards .poroterm__card-link span,
+.popular__cards .istkult__card-link span,
+.popular__cards .popular__card-link span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    color: #DB9554;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.popular__card-link span {
+    left: 0 !important;
 }
 
 .poroterm__card,
@@ -431,6 +512,15 @@ h2 {
     border-radius: 22px 22px 0px 68px;
     background: linear-gradient(#fff 0 0) padding-box, linear-gradient(to bottom, #DB9554, #fff) border-box;
     transition: all 0.3s ease;
+}
+
+.poroterm__card-link-mobile,
+.istkult__card-link-mobile,
+.popular__card-link-mobile {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #DB9554;
+    display: none;
 }
 
 .poroterm__card-img,
@@ -1726,6 +1816,12 @@ h2.individual__title {
     .popular__cards div {
         margin-right: 5px;
     }
+
+    .poroterm__card-link-mobile,
+  .istkult__card-link-mobile,
+  .popular__card-link-mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2463,6 +2559,30 @@ h2.individual__title {
     .gallery-main .column img {
         height: 100px !important;
     }
+
+    .modal {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .modal a.close-modal {
+        top: 10px !important;
+        right: 10px !important;
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    .modal .contact .contact__title {
+        font-size: 2.4rem !important;
+    }
+
+    .modal .contact .contact__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .modal .contact__form button {
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 374px) {
@@ -2759,7 +2879,6 @@ h2.individual__title {
 
 .modal {
     margin-top: 120px;
-    vertical-align: middle;
 }
 
 .modal .contact {
@@ -2777,6 +2896,10 @@ h2.individual__title {
 
 .modal .contact__top {
     margin-bottom: 20px;
+}
+
+.modal .contact__form {
+    text-align: center;
 }
 
 .modal .contact__form button {
