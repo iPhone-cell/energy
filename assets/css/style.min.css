@@ -1789,6 +1789,9 @@ h2.individual__title {
   .gallery-main {
     padding-top: 100px !important;
   }
+  .modal .contact .contact__title {
+    font-size: 3.4rem !important;
+  }
 }
 @media (max-width: 576px) {
   .intro__title {
@@ -2061,6 +2064,25 @@ h2.individual__title {
   .gallery-main .column img {
     height: 100px !important;
   }
+  .modal {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .modal a.close-modal {
+    top: 10px !important;
+    right: 10px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .modal .contact .contact__title {
+    font-size: 2.4rem !important;
+  }
+  .modal .contact .contact__subtitle {
+    font-size: 1.8rem;
+  }
+  .modal .contact__form button {
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 374px) {
   .benefits__btn {
@@ -2313,7 +2335,6 @@ h2.individual__title {
 
 .modal {
   margin-top: 120px;
-  vertical-align: middle;
 }
 .modal .contact {
   padding: 30px 0 30px 0;
@@ -2327,6 +2348,9 @@ h2.individual__title {
 }
 .modal .contact__top {
   margin-bottom: 20px;
+}
+.modal .contact__form {
+  text-align: center;
 }
 .modal .contact__form button {
   margin-top: 20px;
