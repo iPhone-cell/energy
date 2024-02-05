@@ -2294,11 +2294,21 @@ h2.individual__title {
         font-size: 2rem;
     }
 
-    .popular__cards div {
+    .popular__cards div,
+  .poroterm__cards div,
+  .istkult__cards div {
         margin-right: 0 !important;
     }
 
-    .popular__cards .popular__card {
+    .popular__cards .popular__card,
+  .popular__cards .poroterm__card,
+  .popular__cards .istkult__card,
+  .poroterm__cards .popular__card,
+  .poroterm__cards .poroterm__card,
+  .poroterm__cards .istkult__card,
+  .istkult__cards .popular__card,
+  .istkult__cards .poroterm__card,
+  .istkult__cards .istkult__card {
         margin-right: 10px !important;
     }
 
