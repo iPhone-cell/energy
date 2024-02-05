@@ -793,6 +793,7 @@ h2 {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    background: url("../images/gallery/1.jpg") center/cover no-repeat;
 }
 
 .how__middle-video img {
@@ -1373,6 +1374,7 @@ h2.individual__title {
 
     .poroterm__cards {
         overflow: auto;
+        padding-bottom: 15px;
     }
 
     .poroterm__cards, .istkult__cards, .popular__cards {
@@ -1508,7 +1510,7 @@ h2.individual__title {
     }
 
     .intro__main {
-        height: 650px;
+        height: 500px;
     }
 
     .intro__title {
@@ -2062,7 +2064,7 @@ h2.individual__title {
         left: -100%;
         width: 100%;
         position: fixed;
-        top: 66px;
+        top: 62px;
         gap: 0;
         display: -ms-flexbox;
         display: flex;
@@ -2089,6 +2091,10 @@ h2.individual__title {
 
     .mobile-menu.active {
         left: 0;
+    }
+
+    .gallery-main {
+        padding-top: 100px !important;
     }
 }
 
@@ -2434,12 +2440,6 @@ h2.individual__title {
         margin-bottom: 20px;
     }
 
-    .slick-arrow {
-        bottom: 0;
-        margin-top: 0;
-        margin-bottom: -520px;
-    }
-
     .slick-arrow img {
         width: 30px;
     }
@@ -2451,6 +2451,14 @@ h2.individual__title {
     .slick-prev {
         right: 40px;
     }
+
+    .gallery-main .column {
+        width: 50%;
+    }
+
+    .gallery-main .column img {
+        height: 100px !important;
+    }
 }
 
 @media (max-width: 374px) {
@@ -2458,6 +2466,10 @@ h2.individual__title {
         font-size: 9px;
         width: 300px;
     }
+}
+
+.gallery-main {
+    padding-top: 180px;
 }
 
 .row > .column {
@@ -2476,11 +2488,17 @@ h2.individual__title {
     width: 25%;
 }
 
+.column img {
+    margin-bottom: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
 /* The Modal (background) */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -2587,15 +2605,6 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 .row > .column {
     padding: 0 8px;
 }
@@ -2615,7 +2624,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -2632,7 +2641,7 @@ body {
     margin: auto;
     padding: 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 /* The Close Button */
@@ -2726,4 +2735,14 @@ img.hover-shadow {
 
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back {
+    color: #DB9554;
+    text-decoration: underline;
+}
+
+.back:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }

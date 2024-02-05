@@ -2070,30 +2070,40 @@ h2.individual__title {
 }
 .gallery-main {
   padding-top: 180px;
+  /* Create four equal columns that floats next to eachother */
+  /* Modal Content */
+  /* The Close Button */
+  /* Hide the slides by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Caption text */
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
 }
-
-.row > .column {
+.gallery-main .row > .column {
   padding: 0 8px;
 }
-
-.row:after {
+.gallery-main .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* Create four equal columns that floats next to eachother */
-.column {
+.gallery-main .column {
   float: left;
   width: 25%;
 }
-.column img {
+.gallery-main .column img {
   margin-bottom: 20px;
   object-fit: cover;
 }
-
-/* The Modal (background) */
-.modal {
+.gallery-main .modal {
   display: none;
   position: fixed;
   z-index: 99999;
@@ -2104,10 +2114,11 @@ h2.individual__title {
   height: 100%;
   overflow: auto;
   background-color: black;
+  max-width: 2560px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-
-/* Modal Content */
-.modal-content {
+.gallery-main .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -2115,9 +2126,7 @@ h2.individual__title {
   width: 90%;
   max-width: 1200px;
 }
-
-/* The Close Button */
-.close {
+.gallery-main .close {
   color: white;
   position: absolute;
   top: 10px;
@@ -2125,22 +2134,17 @@ h2.individual__title {
   font-size: 35px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.gallery-main .close:hover,
+.gallery-main .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-
-/* Hide the slides by default */
-.mySlides {
+.gallery-main .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
+.gallery-main .prev,
+.gallery-main .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -2155,70 +2159,53 @@ h2.individual__title {
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Position the "next button" to the right */
-.next {
+.gallery-main .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.gallery-main .prev:hover,
+.gallery-main .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
+.gallery-main .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-
-/* Caption text */
-.caption-container {
+.gallery-main .caption-container {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
   color: white;
 }
-
-img.demo {
+.gallery-main img.demo {
   opacity: 0.6;
 }
-
-.active,
-.demo:hover {
+.gallery-main .active,
+.gallery-main .demo:hover {
   opacity: 1;
 }
-
-img.hover-shadow {
+.gallery-main img.hover-shadow {
   transition: 0.3s;
 }
-
-.hover-shadow:hover {
+.gallery-main .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.row > .column {
+.gallery-main .row > .column {
   padding: 0 8px;
 }
-
-.row:after {
+.gallery-main .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-.column {
+.gallery-main .column {
   float: left;
   width: 25%;
 }
-
-/* The Modal (background) */
-.modal {
+.gallery-main .modal {
   display: none;
   position: fixed;
   z-index: 99999;
@@ -2230,9 +2217,7 @@ img.hover-shadow {
   overflow: auto;
   background-color: black;
 }
-
-/* Modal Content */
-.modal-content {
+.gallery-main .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -2240,9 +2225,7 @@ img.hover-shadow {
   width: 90%;
   max-width: 800px;
 }
-
-/* The Close Button */
-.close {
+.gallery-main .close {
   color: white;
   position: absolute;
   top: 10px;
@@ -2250,25 +2233,20 @@ img.hover-shadow {
   font-size: 35px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.gallery-main .close:hover,
+.gallery-main .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-
-.mySlides {
+.gallery-main .mySlides {
   display: none;
 }
-
-.cursor {
+.gallery-main .cursor {
   cursor: pointer;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
+.gallery-main .prev,
+.gallery-main .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -2283,61 +2261,83 @@ img.hover-shadow {
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Position the "next button" to the right */
-.next {
+.gallery-main .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.gallery-main .prev:hover,
+.gallery-main .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
+.gallery-main .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-
-img {
+.gallery-main img {
   margin-bottom: -4px;
 }
-
-.caption-container {
+.gallery-main .caption-container {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
   color: white;
 }
-
-.demo {
+.gallery-main .demo {
   opacity: 0.6;
 }
-
-.active,
-.demo:hover {
+.gallery-main .active,
+.gallery-main .demo:hover {
   opacity: 1;
 }
-
-img.hover-shadow {
+.gallery-main img.hover-shadow {
   transition: 0.3s;
 }
-
-.hover-shadow:hover {
+.gallery-main .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.back {
+.gallery-main .back {
   color: #DB9554;
   text-decoration: underline;
 }
-.back:hover {
+.gallery-main .back:hover {
   text-decoration: underline;
   opacity: 0.8;
+}
+
+.jquery-modal.blocker.current {
+  z-index: 3;
+}
+
+.modal {
+  margin-top: 120px;
+  vertical-align: middle;
+}
+.modal .contact {
+  padding: 30px 0 30px 0;
+  background: 0;
+}
+.modal .contact__title {
+  font-size: 4rem;
+}
+.modal .contact__subtitle {
+  font-size: 2.4rem;
+}
+.modal .contact__top {
+  margin-bottom: 20px;
+}
+.modal .contact__form button {
+  margin-top: 20px;
+}
+.modal .close-modal {
+  background-image: url("../images/close.svg") !important;
+  top: 20px !important;
+  right: 20px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+.modal .close-modal:hover {
+  opacity: 0.7;
 }

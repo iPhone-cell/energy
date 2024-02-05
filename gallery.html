@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link href="assets/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -14,8 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title></title>
-</head>
+    <title></title></head>
 <body>
 
     <header class="header">
@@ -315,16 +315,42 @@
       }
       </script>
 
-    
-
+    <!-- Modal Windows -->
+    <div id="ex1" class="modal">
+        <div class="contact">
+            <div class="container">
+                <div class="contact__main">
+                    <div class="contact__top">
+                        <h2 class="contact__title">
+                            Оставьте свои контакты
+                        </h2>
+                        <div class="contact__subtitle">
+                            Наши специалисты свяжутся с вами в ближайшее время.
+                            Это совершенно бесплатно!
+                        </div>
+                    </div>
+                    <div class="contact__bottom">
+                        <form action="#" class="contact__form">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="Ваш Email" required>
+                            <input type="tel" placeholder="Номер телефона" required>
+                            <button type="submit">
+                                <img src="assets/images/buttons/form-btn.svg" alt="">
+                                <span>Записаться</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- jQuery Modal -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- Slick Slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
