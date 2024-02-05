@@ -484,17 +484,13 @@ h2 {
 .popular__cards .popular__card-link span {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     color: #DB9554;
     font-weight: 700;
     opacity: 0;
     transition: all 0.3s ease;
-}
-
-.popular__card-link span {
-    left: 0 !important;
 }
 
 .poroterm__card,
@@ -577,6 +573,7 @@ h2 {
 .individual__btn,
 .mortgage__top-btn,
 .mortgage__bottom-btn,
+.gallery-btn,
 .contact__form button {
     position: relative;
     max-width: 525px;
@@ -591,6 +588,7 @@ h2 {
 .individual__btn img,
 .mortgage__top-btn img,
 .mortgage__bottom-btn img,
+.gallery-btn img,
 .contact__form button img {
     -webkit-filter: drop-shadow(0px 4px 106px #DB9554);
     filter: drop-shadow(0px 4px 106px #DB9554);
@@ -604,6 +602,7 @@ h2 {
 .individual__btn:hover,
 .mortgage__top-btn:hover,
 .mortgage__bottom-btn:hover,
+.gallery-btn:hover,
 .contact__form button:hover {
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
@@ -618,6 +617,7 @@ h2 {
 .individual__btn span,
 .mortgage__top-btn span,
 .mortgage__bottom-btn span,
+.gallery-btn span,
 .contact__form button span {
     position: absolute;
     left: 50%;
@@ -1346,6 +1346,10 @@ h2.individual__title {
     transform: scale(1.1);
 }
 
+.footer__partners a img {
+    border-radius: 10px;
+}
+
 .footer__divider {
     width: 100%;
     background: #fff;
@@ -1463,7 +1467,6 @@ h2.individual__title {
     }
 
     .poroterm__cards {
-        overflow: auto;
         padding-bottom: 15px;
     }
 
@@ -1474,10 +1477,6 @@ h2.individual__title {
 
     .poroterm__cards div, .istkult__cards div, .popular__cards div {
         margin-right: 20px;
-    }
-
-    .istkult__cards, .poroterm__cards {
-        overflow: auto;
     }
 
     .popular__card-price {
@@ -1686,10 +1685,6 @@ h2.individual__title {
 
     .poroterm__card .poroterm__cards div, .poroterm__card .istkult__cards div, .poroterm__card .popular__cards div, .istkult__card .poroterm__cards div, .istkult__card .istkult__cards div, .istkult__card .popular__cards div, .popular__card .poroterm__cards div, .popular__card .istkult__cards div, .popular__card .popular__cards div {
         margin-right: 0;
-    }
-
-    .istkult__cards {
-        overflow: auto;
     }
 
     .istkult__card-place {
@@ -2270,14 +2265,6 @@ h2.individual__title {
         font-size: 2rem;
     }
 
-    .poroterm__card, .istkult__card {
-        width: 280px;
-    }
-
-    .poroterm__card img, .istkult__card img {
-        width: 200px;
-    }
-
     .poroterm__card-btn span, .istkult__card-btn span, .popular__card-btn span {
         font-size: 1.6rem;
     }
@@ -2583,6 +2570,24 @@ h2.individual__title {
     .modal .contact__form button {
         margin-top: 0 !important;
     }
+
+    .gallery-main .gallery-btn span {
+        font-size: 2rem;
+    }
+
+    .gallery-main .gallery-btn img {
+        width: 180px;
+    }
+
+    .poroterm__top,
+  .istkult__top,
+  .popular__top {
+        margin-bottom: 50px;
+    }
+
+    .slick-arrow {
+        margin-top: -50px;
+    }
 }
 
 @media (max-width: 374px) {
@@ -2594,6 +2599,7 @@ h2.individual__title {
 
 .gallery-main {
     padding-top: 180px;
+    padding-bottom: 50px;
   /* Create four equal columns that floats next to eachother */
   /* Modal Content */
   /* The Close Button */
@@ -2620,6 +2626,7 @@ h2.individual__title {
     content: "";
     display: table;
     clear: both;
+    margin-bottom: 20px;
 }
 
 .gallery-main .column {
@@ -2871,6 +2878,19 @@ h2.individual__title {
 .gallery-main .back:hover {
     text-decoration: underline;
     opacity: 0.8;
+}
+
+.gallery-main .gallery-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 2560px;
+}
+
+.gallery-main .gallery-btn img {
+    max-width: 250px;
 }
 
 .jquery-modal.blocker.current {
