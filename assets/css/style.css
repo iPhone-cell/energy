@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "vendor/lightbox.min.css";
+
 @font-face {
     font-family: "Mazzard";
   src: url("../fonts/MazzardM-Bold.eot");
@@ -1867,6 +1869,12 @@ h2.individual__title {
         opacity: 0;
         display: none;
     }
+
+    .poroterm__cards .gallery-main .column img,
+  .istkult__cards .gallery-main .column img,
+  .popular__cards .gallery-main .column img {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2249,6 +2257,27 @@ h2.individual__title {
     .back {
         font-size: 1.8rem;
     }
+
+    .gallery-main {
+        overflow: auto;
+    }
+
+    .gallery-main .column {
+        width: 33% !important;
+    }
+
+    .gallery-main .column:last-child img {
+        margin-bottom: 40px;
+    }
+
+    .gallery-main .modal {
+        margin-bottom: 20px !important;
+        overflow: auto;
+    }
+
+    .gallery-main .row > .column img {
+        max-height: 100px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2596,7 +2625,7 @@ h2.individual__title {
     }
 
     .slick-arrow img {
-        width: 30px;
+        width: 36px;
     }
 
     .slick-arrow {
@@ -2604,7 +2633,7 @@ h2.individual__title {
     }
 
     .slick-prev {
-        right: 40px;
+        right: 55px;
     }
 
     .gallery-main .column {
@@ -2650,11 +2679,22 @@ h2.individual__title {
     .poroterm__top,
   .istkult__top,
   .popular__top {
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
     .slick-arrow {
-        margin-top: -50px;
+        margin-top: -60px;
+    }
+
+    .row > .column {
+        padding: 0 2px;
+    }
+
+    .row > .column img {
+        max-height: 80px !important;
+        margin-top: 5px !important;
+        padding: 0 !important;
+        width: 100%;
     }
 }
 
@@ -2665,309 +2705,18 @@ h2.individual__title {
     }
 }
 
-.gallery-main {
-    padding-top: 140px;
-    padding-bottom: 50px;
-  /* Create four equal columns that floats next to eachother */
-  /* Modal Content */
-  /* The Close Button */
-  /* Hide the slides by default */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Number text (1/3 etc) */
-  /* Caption text */
-  /* The Modal (background) */
-  /* Modal Content */
-  /* The Close Button */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Number text (1/3 etc) */
+.gallery-main .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
 }
 
-.gallery-main .row > .column {
-    padding: 0 8px;
-}
-
-.gallery-main .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 20px;
-}
-
-.gallery-main .column {
-    float: left;
-    width: 25%;
-}
-
-.gallery-main .column img {
-    margin-bottom: 20px;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.gallery-main .modal {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
+.gallery-main .gallery img {
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-    max-width: 2560px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 0;
-}
-
-.gallery-main .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.gallery-main .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.gallery-main .close:hover,
-.gallery-main .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.gallery-main .mySlides {
-    display: none;
-}
-
-.gallery-main .prev,
-.gallery-main .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.gallery-main .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.gallery-main .prev:hover,
-.gallery-main .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.gallery-main .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.gallery-main .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
-
-.gallery-main img.demo {
-    opacity: 0.6;
-}
-
-.gallery-main .active,
-.gallery-main .demo:hover {
-    opacity: 1;
-}
-
-.gallery-main img.hover-shadow {
-    transition: 0.3s;
-}
-
-.gallery-main .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.gallery-main .row > .column {
-    padding: 0 8px;
-}
-
-.gallery-main .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.gallery-main .column {
-    float: left;
-    width: 25%;
-}
-
-.gallery-main .modal {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-}
-
-.gallery-main .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 800px;
-}
-
-.gallery-main .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.gallery-main .close:hover,
-.gallery-main .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.gallery-main .mySlides {
-    display: none;
-}
-
-.gallery-main .cursor {
-    cursor: pointer;
-}
-
-.gallery-main .prev,
-.gallery-main .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.gallery-main .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.gallery-main .prev:hover,
-.gallery-main .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.gallery-main .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.gallery-main img {
-    margin-bottom: -4px;
-}
-
-.gallery-main .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
-
-.gallery-main .demo {
-    opacity: 0.6;
-}
-
-.gallery-main .active,
-.gallery-main .demo:hover {
-    opacity: 1;
-}
-
-.gallery-main img.hover-shadow {
-    transition: 0.3s;
-}
-
-.gallery-main .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.gallery-main .back {
-    color: #DB9554;
-    text-decoration: underline;
-}
-
-.gallery-main .back:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-}
-
-.gallery-main .gallery-btn {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 2560px;
-}
-
-.gallery-main .gallery-btn img {
-    max-width: 250px;
 }
 
 .jquery-modal.blocker.current {
-    z-index: 3;
-}
-
-.modal {
-    margin-top: 120px;
+    z-index: 999;
 }
 
 .modal .contact {
@@ -2989,6 +2738,7 @@ h2.individual__title {
 
 .modal .contact__form {
     text-align: center;
+    margin-right: 0;
 }
 
 .modal .contact__form button {

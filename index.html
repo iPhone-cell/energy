@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link href="assets/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Marquiz script start -->
+    <script>
+        (function(w, d, s, o){
+          var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+            if (document.readyState !== 'loading') Marquiz.init(o);
+            else document.addEventListener("DOMContentLoaded", function() {
+              Marquiz.init(o);
+            });
+          };
+          d.head.insertBefore(j, d.head.firstElementChild);
+        })(window, document, 'script', {
+            host: '//quiz.marquiz.ru',
+            region: 'eu',
+            id: '65c257efe11c42002690beb7',
+            autoOpen: false,
+            autoOpenFreq: 'once',
+            openOnExit: false,
+            disableOnMobile: false
+          }
+        );
+        </script>
+        <!-- Marquiz script end -->
+    
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -841,7 +863,7 @@
                             </div>
                             <img src="assets/images/mortgage/gift-big.png" alt="" class="mortgage__bottom-gift divider">
                             <div class="mortgage_-bottom-right">
-                                <a href="#ex1" rel="modal:open" class="mortgage__bottom-btn">
+                                <a href="#popup:marquiz_65c257efe11c42002690beb7" class="mortgage__bottom-btn">
                                     <img src="assets/images/buttons/poroterm-btn.svg" alt="">
                                     <span>Хочу подарок</span>
                                 </a>
@@ -1026,7 +1048,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- Slick Slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
 
     <script src="assets/js/app.js"></script>
 </body>
