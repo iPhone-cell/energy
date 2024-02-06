@@ -2186,13 +2186,13 @@ h2.individual__title {
     margin-bottom: 20px;
   }
   .slick-arrow img {
-    width: 30px;
+    width: 36px;
   }
   .slick-arrow {
     right: 0;
   }
   .slick-prev {
-    right: 40px;
+    right: 55px;
   }
   .gallery-main .column {
     width: 50%;
@@ -2228,10 +2228,10 @@ h2.individual__title {
   .poroterm__top,
   .istkult__top,
   .popular__top {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   .slick-arrow {
-    margin-top: -50px;
+    margin-top: -60px;
   }
 }
 @media (max-width: 374px) {
@@ -2492,12 +2492,9 @@ h2.individual__title {
 }
 
 .jquery-modal.blocker.current {
-  z-index: 3;
+  z-index: 999;
 }
 
-.modal {
-  margin-top: 120px;
-}
 .modal .contact {
   padding: 30px 0 30px 0;
   background: 0;
@@ -2513,6 +2510,7 @@ h2.individual__title {
 }
 .modal .contact__form {
   text-align: center;
+  margin-right: 0;
 }
 .modal .contact__form button {
   margin-top: 20px;

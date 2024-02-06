@@ -1817,6 +1817,56 @@ h2.individual__title {
   .popular__card-link-mobile {
         display: block;
     }
+
+    .poroterm__cards,
+  .istkult__cards,
+  .popular__cards {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .poroterm__cards .poroterm__card-link:hover,
+  .poroterm__cards .istkult__card-link:hover,
+  .poroterm__cards .popular__card-link:hover,
+  .istkult__cards .poroterm__card-link:hover,
+  .istkult__cards .istkult__card-link:hover,
+  .istkult__cards .popular__card-link:hover,
+  .popular__cards .poroterm__card-link:hover,
+  .popular__cards .istkult__card-link:hover,
+  .popular__cards .popular__card-link:hover {
+        opacity: 1;
+        height: 100%;
+    }
+
+    .poroterm__cards .poroterm__card-link:hover img,
+  .poroterm__cards .istkult__card-link:hover img,
+  .poroterm__cards .popular__card-link:hover img,
+  .istkult__cards .poroterm__card-link:hover img,
+  .istkult__cards .istkult__card-link:hover img,
+  .istkult__cards .popular__card-link:hover img,
+  .popular__cards .poroterm__card-link:hover img,
+  .popular__cards .istkult__card-link:hover img,
+  .popular__cards .popular__card-link:hover img {
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    .poroterm__cards .poroterm__card-link:hover span,
+  .poroterm__cards .istkult__card-link:hover span,
+  .poroterm__cards .popular__card-link:hover span,
+  .istkult__cards .poroterm__card-link:hover span,
+  .istkult__cards .istkult__card-link:hover span,
+  .istkult__cards .popular__card-link:hover span,
+  .popular__cards .poroterm__card-link:hover span,
+  .popular__cards .istkult__card-link:hover span,
+  .popular__cards .popular__card-link:hover span {
+        opacity: 0;
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2188,8 +2238,16 @@ h2.individual__title {
         padding-top: 100px !important;
     }
 
+    .gallery-main h2 {
+        margin-top: 20px;
+    }
+
     .modal .contact .contact__title {
         font-size: 3.4rem !important;
+    }
+
+    .back {
+        font-size: 1.8rem;
     }
 }
 
@@ -2608,7 +2666,7 @@ h2.individual__title {
 }
 
 .gallery-main {
-    padding-top: 180px;
+    padding-top: 140px;
     padding-bottom: 50px;
   /* Create four equal columns that floats next to eachother */
   /* Modal Content */
@@ -2664,6 +2722,7 @@ h2.individual__title {
     max-width: 2560px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 0;
 }
 
 .gallery-main .modal-content {
