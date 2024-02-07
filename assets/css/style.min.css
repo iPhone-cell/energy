@@ -1479,6 +1479,11 @@ h2.individual__title {
   opacity: 0.9;
 }
 
+@media (max-width: 1600px) {
+  .intro__main {
+    height: 100vh;
+  }
+}
 @media (max-width: 1200px) {
   h2 {
     font-size: 5rem;
@@ -1494,9 +1499,6 @@ h2.individual__title {
   }
   .header__phones img {
     width: 32px;
-  }
-  .intro__main {
-    height: 100vh;
   }
   .intro__title {
     font-size: 6rem;
@@ -1603,6 +1605,11 @@ h2.individual__title {
   }
   .popular__card .popular__card-prices {
     margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .intro__main {
+    height: 900px;
   }
 }
 @media (max-width: 992px) {
