@@ -1836,8 +1836,7 @@ h2.individual__title {
     margin-top: 10px;
   }
   .lightbox {
-    top: 50% !important;
-    transform: translateY(-50%);
+    top: 40% !important;
   }
 }
 @media (max-width: 768px) {
