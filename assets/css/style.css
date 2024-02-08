@@ -691,11 +691,25 @@ h2 {
     text-align: center;
     -o-border-image: linear-gradient(#DB9554, #fff) 50;
     border-image: linear-gradient(#DB9554, #fff) 50;
+    -webkit-border-width: 1px;
     border-width: 1px;
+    -webkit-border-style: solid;
     border-style: solid;
     border-radius: 22px 22px 0px 68px;
-    background: linear-gradient(#fff 0 0) padding-box, linear-gradient(to bottom, #DB9554, #fff) border-box;
+    -webkit-background: linear-gradient(#fff 0 0) padding-box, linear-gradient(to bottom, #DB9554, #DB9554 10%, #fff 80%, #fff 0%) border-box;
+    background: linear-gradient(#fff 0 0) padding-box, linear-gradient(to bottom, #DB9554, #DB9554 10%, #fff 80%, #fff 0%) border-box;
     transition: all 0.3s ease;
+}
+
+.poroterm__card a img,
+.istkult__card a img,
+.popular__card a img {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.popular__cards .slick-item {
+    height: 650px;
 }
 
 .poroterm__card-link-mobile,
@@ -1765,6 +1779,10 @@ h2.individual__title {
     .popular__card .popular__card-prices {
         margin-right: 0;
     }
+
+    .popular__cards .slick-item {
+        height: auto;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2068,6 +2086,28 @@ h2.individual__title {
   .istkult__cards .gallery-main .column img,
   .popular__cards .gallery-main .column img {
         margin-top: 10px;
+    }
+
+    .popular__card-prices .popular__card-price {
+        font-size: 1.6rem;
+    }
+
+    .popular__card-prices .popular__card-price span {
+        font-size: 1.6rem;
+    }
+
+    .popular__card-prices .popular__card-oldprice.divider {
+        font-size: 1.4rem;
+    }
+
+    .popular__card-prices .popular__card-oldprice.divider:before {
+        width: 16px;
+        left: -19px;
+        top: 10px;
+    }
+
+    .popular__card-prices .popular__card-oldprice.divider:after {
+        height: 1.5px;
     }
 }
 
@@ -2893,6 +2933,24 @@ h2.individual__title {
 
     .gallery-main .gallery {
         margin-bottom: 30px !important;
+    }
+
+    .popular__card-prices .popular__card-oldprice.divider:before {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .popular__card-prices {
+        font-size: 1.2rem !important;
+    }
+
+    .popular__card-prices span {
+        font-size: 1.2rem !important;
+    }
+
+    .popular__card-prices .popular__card-prices .popular__card-oldprice.divider {
+        font-size: 1rem !important;
     }
 }
 

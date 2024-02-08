@@ -1877,6 +1877,15 @@ h2.individual__title {
   }
 }
 @media (max-width: 768px) {
+  .poroterm__card .poroterm__card-info, .poroterm__card .istkult__card-info, .poroterm__card .popular__card-info,
+  .istkult__card .poroterm__card-info,
+  .istkult__card .istkult__card-info,
+  .istkult__card .popular__card-info,
+  .popular__card .poroterm__card-info,
+  .popular__card .istkult__card-info,
+  .popular__card .popular__card-info {
+    font-size: 2.5rem !important;
+  }
   .header__nav,
   .header__social,
   .header__phones {
@@ -2516,6 +2525,16 @@ h2.individual__title {
   }
   .popular__card-prices .popular__card-prices .popular__card-oldprice.divider {
     font-size: 1rem !important;
+  }
+}
+@media (max-width: 376px) {
+  .istkult__card, .popular__card, .poroterm__card {
+    max-width: 360px;
+    text-align: center;
+  }
+  .istkult__card img, .popular__card img, .poroterm__card img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 374px) {
