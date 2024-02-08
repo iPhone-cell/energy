@@ -1803,7 +1803,9 @@ h2.individual__title {
   .slick-prev {
     right: 110px;
   }
-  .popular__cards div {
+  .popular__cards div,
+  .poroterm__cards div,
+  .istkult__cards div {
     margin-right: 5px;
   }
   .poroterm__card-link-mobile,
